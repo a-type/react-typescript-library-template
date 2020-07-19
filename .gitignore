@@ -107,3 +107,6 @@ dist-esm
 # https://stackoverflow.com/a/58550620
 .yarn/unplugged/
 .yarn/build-state.yml
+
+storybook-static
+docs/
