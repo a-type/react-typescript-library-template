@@ -1,9 +1,9 @@
 import * as React from 'react';
 
-export type ComponentProps = {
+export type ComponentProps = React.HTMLAttributes<HTMLDivElement> & {
   children?: React.ReactNode;
 };
 
-export function Component({ children }: ComponentProps) {
-  return <div>{children || 'Hello world'}</div>;
+export function Component({ children, ...rest }: ComponentProps) {
+  return <div {...rest}>{children || 'Hello world'}</div>;
 }
