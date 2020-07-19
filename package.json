@@ -19,7 +19,8 @@
     "prepublishOnly": "npm run build",
     "release": "npm publish --access public",
     "storybook": "start-storybook -p 6006",
-    "storybook:build": "build-storybook -o docs/storybook"
+    "storybook:build": "build-storybook -o docs/storybook",
+    "typedoc": "typedoc --options typedoc.json"
   },
   "repository": {
     "type": "git",
@@ -59,6 +60,8 @@
     "jest": "^26.1.0",
     "prettier": "^2.0.5",
     "react": "^16.13.1",
+    "typedoc": "0.17.0-3",
+    "typedoc-plugin-internal-external": "^2.2.0",
     "typescript": "^3.9.7"
   },
   "dependencies": {}

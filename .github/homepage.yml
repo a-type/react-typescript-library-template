@@ -20,8 +20,10 @@ jobs:
       - run: rm -rf docs
 
       # storybook
-      - run: rm -rf storybook-static
       - run: npm run storybook:build
+
+      # typedoc
+      - run: npm run typedoc
 
       # homepage
       - run: npm ci
