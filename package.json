@@ -16,7 +16,7 @@
     "build:esm": "tsc -m es6 --outDir dist-esm",
     "watch:cjs": "tsc --watch",
     "watch:esm": "tsc -m es6 --outDir dist-esm --watch",
-    "prepublishOnly": "npm run build",
+    "prepublishOnly": "npm run build:cjs && npm run build:esm",
     "release": "npm publish --access public",
     "storybook": "start-storybook -p 6006",
     "storybook:build": "build-storybook -o docs/storybook",
@@ -32,7 +32,7 @@
     "email": "gaforres@gmail.com",
     "url": "https://github.com/a-type"
   },
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/a-type/react-typescript-library-template/issues"
   },
